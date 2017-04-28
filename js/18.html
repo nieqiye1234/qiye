@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+body{text-align:center;}
+input{font:12px arial;cursor:pointer;padding:0 10px;}
+</style>
+<body>
+<input type="button" value="3">
+
+
+</body>
+<script type="text/javascript">
+window.onload = function (){
+	var aBtn = document.getElementsByTagName("input")[0];
+	var i = 0;
+	
+	aBtn.onclick = function (){
+		aBtn.value = ++i;	
+		console.log(i)
+	}	
+}
+</script>
+</html>
